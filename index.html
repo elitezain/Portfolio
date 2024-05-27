@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+       <div class="container">
+        <nav>
+            <img src="images/Zain 1.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Strengths</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+        <p> Sales Coordinator</p>
+        <h1>Hi, I am <br> <span>Muhammad Zain Nadeem</span> <br> From Pakistan</h1>
+    </div>
+</div>
+<!--------About--------- --->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user zain2.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="Sub-Title">About Me</h1>
+                <p>Highly motivated and results-driven professional with a
+                    strong track record of success in [relevant field].
+                    Possesses a diverse range of skills and expertise.
+                    Demonstrates exceptional leadership abilities,
+                    adaptability, and a keen eye for detail. Committed to
+                    delivering outstanding outcomes while maintaining a
+                    strong focus on client satisfaction.</p>
+
+                    <div class="tab-titles">
+                       <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                       <p class="tab-links" onclick="opentab('education')">Education</p>
+                       <p class="tab-links" onclick="opentab('experience')">Experience</p> 
+                    </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><Span>Web Developement</Span><br>Designing Websites</li><br>
+                        <li><Span>MS Office</Span><br>Excell,PowerPoint,Word</li><br>
+                        <li><Span>ERP Software</Span><br>Microsoft Dynamics</li><br>
+                        <li><Span>ERP Software</Span><br>Salesflo</li>
+                    </ul>
+                </div>   
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><Span>FA</Span><br>Govt.Collage<br>Rawalpindi, Pakistan</li><br>
+                        <li><Span>Matric</Span><br>Aliied School<br>Rawalpindi, Pakistan</li><br>
+                    </ul>
+                </div> 
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><Span>BinBakar International,Sales Coordinator</Span><br>2022 - Present | Rawalpindi</li><br>
+                        <li><Span>Bays International,KPO Sales Operation/ Acting RSC</Span><br>2018 - 2022 | Rawalpindi</li><br>
+                        <li><Span>Distribution Setup,WareHouse Incharge</Span><br>2020 - 2021 | Rawalpindi</li><br>
+                        <li><Span>KallStar Insurance, Verification Department</Span><br>2017 - 2018 | Rawalpindi</li><br>
+                    </ul>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+
+
+</body>
+</html>
