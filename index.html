@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6ff042e0a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+       <div class="container">
+        <nav>
+            <img src="images/Zain 1.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+        <p> Front-End Developer / Sales Coordinator</p>
+        <h1>Hi, I am <br> <span>Muhammad Zain Nadeem</span> <br> From Pakistan</h1>
+    </div>
+</div>
+<!--------About--------- --->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user zain2.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="Sub-Title">About Me</h1>
+                <p>Highly motivated and results-driven professional with a
+                    strong track record of success in [relevant field].
+                    Possesses a diverse range of skills and expertise.
+                    Demonstrates exceptional leadership abilities,
+                    adaptability, and a keen eye for detail. Committed to
+                    delivering outstanding outcomes while maintaining a
+                    strong focus on client satisfaction.</p>
+
+                    <div class="tab-titles">
+                       <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                       <p class="tab-links" onclick="opentab('education')">Education</p>
+                       <p class="tab-links" onclick="opentab('experience')">Experience</p> 
+                    </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><Span>Web Developement</Span><br>Designing Websites</li><br>
+                        <li><Span>MS Office</Span><br>Excell,PowerPoint,Word</li><br>
+                        <li><Span>ERP Software</Span><br>Microsoft Dynamics</li><br>
+                        <li><Span>ERP Software</Span><br>Salesflo</li>
+                    </ul>
+                </div>   
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><Span>FA</Span><br>Govt.Collage<br>Rawalpindi, Pakistan</li><br>
+                        <li><Span>Matric</Span><br>Aliied School<br>Rawalpindi, Pakistan</li><br>
+                    </ul>
+                </div> 
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><Span>BinBakar International,Sales Coordinator</Span><br>2022 - Present | Rawalpindi</li><br>
+                        <li><Span>Bays International,KPO Sales Operation/ Acting RSC</Span><br>2018 - 2022 | Rawalpindi</li><br>
+                        <li><Span>Distribution Setup,WareHouse Incharge</Span><br>2020 - 2021 | Rawalpindi</li><br>
+                        <li><Span>KallStar Insurance, Verification Department</Span><br>2017 - 2018 | Rawalpindi</li><br>
+                    </ul>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+
+`<!--------Services--------->
+
+<div id="services">
+    <div class="container">
+        <h1 class="Sub-Title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Good Grip in HTML, CSS, Front-End<br><br> Developer Specializing in Responsive<br><br> Design with Expertise in HTML, CSS,JS.<br><br> A skilled front-end developer with a proven<br><br> track record in transforming design<br><br> concepts into pixel-perfect, fully responsive<br><br> websites, ensuring that your web projects<br><br> not only meet but exceed industry<br><br> standards.</p>
+                <a href="https://zainnadeemofficial.netlify.app/">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-microsoft"></i>
+                <h2>MS Office</h2>
+                <p>Target VS Achievement Report for Sales Team <br><br>Creating Dynamic reports with PivotTables <br><br> Managinglargedatasets with function If,Sum, Vlookup<br><br>Building Charts and Graphs<br><br>Advance Conditional Formatting<br><br>Creating Targets for Salesperson according to the given ratio </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>Softwares</h2>
+                <p>Microsoft Dynamics<br><br>Salesflo<br><br>EffroTech<br><br>Easybook<br>        </p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------Contact--------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="Contact-left">
+                <h1 class="Sub-Title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> zainnadeemofficial01@gmail.com</p><br>
+                <p><i class="fa-solid fa-square-phone"></i> 0333-5756332</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/muhammad-zain-882186229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/realzain_nadeem?igsh=ODhlZGUzenU3ajRi"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+
+            </div>
+            <div class="Contact-right">
+                <form>
+                    <input types="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Zain Nadeem</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+
+
+</body>
+</html>
